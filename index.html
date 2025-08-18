@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab2_Yucheng Chen_300194614</title>
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+
+<header>
+    <a href="https://www.uottawa.ca/en">
+        <img src="uOttawa_Logo.png" alt="uOttawa Logo" class="logo">
+    </a>
+
+    <img src="selfie.png" alt="Profile Image" class="avatar">
+
+    <h1>Yucheng Chen</h1>
+
+    <p class="email">
+        <a href="mailto:ychen723@uottawa.ca">ychen723@uottawa.ca</a>
+    </p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a computer science student passionate about technology and learning new things. <mark>This is my favorite course!</mark></p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Proficiency</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>9</td>
+            <td><meter value="9" min="0" max="10"></meter></td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>8</td>
+            <td><meter value="8" min="0" max="10"></meter></td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>7</td>
+            <td><meter value="7" min="0" max="10"></meter></td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Preferences Form</h2>
+    <form autocomplete="on">
+        <label for="work">Preferred Work Environment:</label><br>
+        <select name="work" id="work">
+            <option value="remote">Remote</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="inperson">In-person</option>
+        </select>
+        <br><br>
+
+        <legend>Interest:</legend>
+        <label><input type="checkbox" name="interest" value="AI"> AI</label><br>
+        <label><input type="checkbox" name="interest" value="WebDev"> Web Development</label><br>
+        <label><input type="checkbox" name="interest" value="Cybersecurity"> Cybersecurity</label>
+        <br><br>
+
+        <label>Favorite Programming Language:</label>
+        <input list="languages" id="language" name="language">
+        <datalist id="languages">
+            <option value="Python">
+            <option value="JavaScript">
+            <option value="Java">
+            <option value="C++">
+            <option value="Go">
+        </datalist><br><br>
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" autocomplete="on">
+        <br><br>
+        <label for="slider">Select a number (1–100):</label>
+        <input type="range" id="slider" name="slider" min="1" max="100" value="50">
+    </form>
+</section>
+
+<section id="feedback">
+    <h2>Feedback</h2>
+    <details>
+        <summary>Why did you choose this field?</summary>
+        <p>I love building things on the web and enjoy solving real-world problems through technology.</p>
+    </details>
+</section>
+
+</body>
+</html>
